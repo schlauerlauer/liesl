@@ -1,0 +1,14 @@
+version: "2"
+sql:
+  - engine: "sqlite"
+    queries: "queries.sql"
+    schema: "schema.sql"
+    gen:
+      go:
+        package: "db"
+        out: "db"
+        # overrides:
+        #   - column: "nodes.nodes"
+        #     go_type:
+        #       import: "github.com/schlauerlauer/liesl/dto"
+        #       type: "NodeArray"

@@ -1,3 +1,4 @@
 /db/
 /main
-/data.*
+/liesl.db*
+/tmp/

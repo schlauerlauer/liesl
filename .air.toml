@@ -4,8 +4,8 @@ tmp_dir = "tmp"
 
 [build]
   args_bin = []
-  bin = "./tmp/main"
-  cmd = "go build -o ./tmp/main ."
+  bin = "./tmp/liesl"
+  cmd = "go build -o ./tmp/liesl ."
   delay = 1000
   exclude_dir = ["tmp", "db"]
   exclude_file = ["tailwind.config.js"]
@@ -21,7 +21,7 @@ tmp_dir = "tmp"
   poll = false
   poll_interval = 0
   post_cmd = []
-  pre_cmd = ["sqlite3 data.db < schema.sql", "sqlc generate"]
+  pre_cmd = ["sqlite3 liesl.db < schema.sql", "sqlc generate"]
   rerun = false
   rerun_delay = 500
   send_interrupt = false
