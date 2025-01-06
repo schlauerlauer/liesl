@@ -8,7 +8,6 @@ import (
 )
 
 func NewRepository(databasePath string) (*db.Queries, error) {
-
 	sqlDb, err := sql.Open("libsql", databasePath)
 	if err != nil {
 		return nil, err
